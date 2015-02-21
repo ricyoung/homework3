@@ -1,7 +1,24 @@
-########################
-# Book class goes here,
-# before Library class
-########################
+# Richard Young
+#jeff@unlv.nevada.edu
+#
+
+# addational information
+# from
+# http://rubylearning.com/satishtalim/writing_our_own_class_in_ruby.html
+# http://code.tutsplus.com/tutorials/ruby-for-newbies-working-with-classes--net-15938
+
+
+
+class Book
+    attr_accessor :title, :author, :checked_out
+
+
+    def initialize(b, a)
+        @title = b
+        @author = a
+        @checked_out = false
+    end
+end
 # Library: manages Books as an array
 # public methods: add, checkout, which_out?
 # instance variables: @books (Array)
